@@ -1,6 +1,7 @@
 package guru.springframework;
 
 import guru.springframework.bean.FakeDataSource;
+import guru.springframework.bean.FakeJmsBroker;
 import guru.springframework.controllers.ConstructorInjectedController;
 import guru.springframework.controllers.GetterInjectedController;
 import guru.springframework.controllers.MyController;
@@ -20,5 +21,9 @@ public class DiDemoApplication {
 		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
 
 		System.out.println(fakeDataSource.getName() + " " + fakeDataSource.getPassword() + " " + fakeDataSource.getUrl());
+
+        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+
+        System.out.println(fakeJmsBroker.getName());
 	}
 }
