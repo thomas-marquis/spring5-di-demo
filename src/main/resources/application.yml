@@ -1,0 +1,5 @@
+guru:
+  jms:
+    username: moi
+    password: oim
+    url: http://db.me.com:6666
