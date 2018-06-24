@@ -3,3 +3,10 @@ guru:
     username: moi
     password: oim
     url: http://db.me.com:6666
+
+---
+spring:
+  profiles: de
+guru:
+  jms:
+    username: pasmoi
